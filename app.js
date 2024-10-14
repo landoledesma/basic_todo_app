@@ -47,7 +47,7 @@ taskList.addEventListener("click", (event) => {
         const newTaskText = prompt("Edit the task", taskText.textContent);
         if (newTaskText !== null && newTaskText.trim() !== "") {
             taskText.textContent = newTaskText.trim();
-            updateLocalStorage();
+            updateLocalStorage(taskList);
         }
     }
 });

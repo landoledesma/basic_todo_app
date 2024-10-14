@@ -14,7 +14,7 @@ export function loadTask(taskList,createTaskElement) {
 
   }
   
-export function updateLocalStorage() {
+export function updateLocalStorage(taskList) {
     const tasks = Array.from(taskList.querySelectorAll("li")).map(
       (li) => li.firstChild.textContent
     );
