@@ -38,7 +38,7 @@ taskList.addEventListener("click", (event) => {
         const taskElement = event.target.parentElement;
         if (confirm("Are you sure you want to delete this task?")) {
                 taskElement.remove();
-                removeFromLocalStorage(taskItem.firstChild.textContent);
+                removeFromLocalStorage(taskElement.firstChild.textContent);
             
         }
     } else if (event.target.classList.contains("edit-btn")) {
